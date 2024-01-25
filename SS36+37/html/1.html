@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Answer Validation</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+        }
+
+        input {
+            margin-bottom: 10px;
+            padding: 8px;
+            border-radius: 20px;
+            border: 1px solid black;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 10px;
+            background-color: rgb(0, 255, 0);
+            color: #fff;
+            border: none;
+        }
+
+        #message {
+            margin-top: 10px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <label for="YA">Your answer</label>
+        <input type="text" id="answerInput">
+    </div>
+    <button id="submitButton" onclick="validateAnswer()">Answer</button>
+    <div id="message"></div>
+
+    <script src="../js/1.js"></script>
+</body>
+</html>

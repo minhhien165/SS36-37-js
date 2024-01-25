@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management</title>
+    <style>
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+        }
+
+        #studentInfo {
+            margin-top: 20px;
+        }
+
+        #studentInfo p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <form id="studentForm">
+        <div>
+            <label for="studentId">Student ID:</label>
+            <input type="text" id="studentId" name="studentId">
+        </div>
+        <div>
+            <label for="studentName">Student Name:</label>
+            <input type="text" id="studentName" name="studentName">
+        </div>
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age">
+        </div>
+        <div>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+        </div>
+
+        <button type="button" onclick="createStudent()">Create</button>
+    </form>
+
+    <div id="studentInfo"></div>
+    <script src="../js/6.js"></script>
+    
+</body>
+</html>

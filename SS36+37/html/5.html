@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic List</title>
+    <style>
+        input {
+            margin-bottom: 10px;
+            border: 1px solid #000000;
+            background-color: yellow;
+        }
+
+        #list {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            padding-left: 40px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Create New Item</h1>
+    <div>
+        <label for="item">Item</label>
+        <input type="text" id="inputValue">
+        <button onclick="addItem()">Add</button>
+    </div>
+    <ul id="list">
+        <li>Nho Mỹ</li>
+        <li>Táo Tàu</li>
+    </ul>
+
+    <script src="../js/5.js"></script>
+</body>
+</html>
